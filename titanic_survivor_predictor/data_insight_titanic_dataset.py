@@ -21,8 +21,8 @@ from matplotlib import pyplot as plt
 # 1. Load data
 train_url = "./titanic_survivor_predictor/datasets/train.csv"
 test_url = "./titanic_survivor_predictor/datasets/test.csv"
-test_df = pd.read_csv(test_url)
 train_df = pd.read_csv(train_url)
+test_df = pd.read_csv(test_url)
 
 # 2. Data Exploration and Analysis
 # 2.1 a simple look into the data
