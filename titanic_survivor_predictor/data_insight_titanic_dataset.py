@@ -26,9 +26,10 @@ test_df = pd.read_csv(test_url)
 
 # 2. Data Exploration and Analysis
 # 2.1 a simple look into the data
+print(train_df.head(8))
+print(train_df.shape)
 train_df.info()
 print(train_df.describe())
-print(train_df.head(8))
 
 total = train_df.isnull().sum().sort_values(ascending=False)
 percent_1 = train_df.isnull().sum() / train_df.isnull().count() * 100
