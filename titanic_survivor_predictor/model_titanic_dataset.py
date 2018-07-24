@@ -309,3 +309,21 @@ plt.show()
 # ROC AUC Score
 r_a_score = roc_auc_score(Y_train, y_scores)
 print("ROC-AUC-Score: ", r_a_score)
+
+print("============================================")
+# print(test_df)
+
+test_pred = pd.Series(Y_pred)
+# print(test_pred)
+# print(type(test_pred))
+test_passengerId = test_df['PassengerId']
+# print(test_passengerId)
+# print(type(test_passengerId))
+test_results = pd.DataFrame({
+    "PassengerId": test_passengerId,
+    "Survived": test_pred
+})
+# print(test_results)
+test_results_url = "./titanic_survivor_predictor/datasets/test_results.csv"
+test_results.to_csv(test_results_url, index=False)
+print("Done")
