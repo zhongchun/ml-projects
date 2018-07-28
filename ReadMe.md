@@ -1,18 +1,10 @@
 # ReadMe 
 
 ## What
-Some machine learning projects
-
-## Contents
-### titanic_survivor_predictor
-This is a Kaggle Competition.
-
-The sinking of the RMS Titanic is one of the most infamous shipwrecks in history.  On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
-
-One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
+Some machine learning projects written by python.
 
 ## Environments
-All projects are implementd by python. I have two python environments which are root and py36.
+All projects are implementd by python. I have two python environments which are root and py36. Most of the projects are writen by py36.
 
 ```python
 root
@@ -33,4 +25,19 @@ matplotlib: 2.2.2
 pandas: 0.23.2
 sklearn: 0.19.1
 ```
+
+## Contents
+### first_project
+A starter project to predict iris classification.
+
+### titanic_survivor_predictor
+This is a Kaggle Competition.
+
+The sinking of the RMS Titanic is one of the most infamous shipwrecks in history.  On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
+
+One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
+
+### house_price_predictor
+This is a Kaggle Competition.
+[House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 

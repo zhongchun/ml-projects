@@ -223,4 +223,3 @@ for dataset in train_test_data:
     dataset['Title'] = dataset['Title'].map(title_mapping)
     dataset['Title'] = dataset['Title'].fillna(0)
 print(train_df.head())
-
