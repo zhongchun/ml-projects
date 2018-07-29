@@ -13,7 +13,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 # import matplotlib.image as mpimg
 from sklearn.model_selection import train_test_split
-from sklearn import svm
+# from sklearn import svm
+from sklearn.ensemble import RandomForestClassifier
 
 data_path = "./digit_recognizer/dataset/"
 train_url = f'{data_path}train.csv'
@@ -60,13 +61,18 @@ print(hist_values)
 print('=' * 120)
 
 # Retraining the model
-clf = svm.SVC()
-clf.fit(train_images, train_labels.values.ravel())
-print(clf.score(test_images, test_labels))
+# clf = svm.SVC()
+# clf.fit(train_images, train_labels.values.ravel())
+# print(clf.score(test_images, test_labels))
+
+# Random Forest
+rf_clf = RandomForestClassifier(n_estimators=100)
+rf_clf.fit(train_images, train_labels.values.ravel())
+print(rf_clf.score(test_images, test_labels))
 
 test_data = pd.read_csv(test_url)
 test_data[test_data > 0] = 1
-results = clf.predict(test_data)
+results = rf_clf.predict(test_data)
 
 df = pd.DataFrame(results)
 df.index.name = 'ImageId'
