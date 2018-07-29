@@ -41,6 +41,8 @@ train_df = train_df.drop('training_set', axis=1)
 test_df = full_df[full_df['training_set'].__eq__(False)]
 test_df = test_df.drop('training_set', axis=1)
 
+# 3. Train a model
+# Random Froest Regressor
 rf = RandomForestRegressor(n_estimators=100, n_jobs=-1)
 rf.fit(train_df, target)
 
