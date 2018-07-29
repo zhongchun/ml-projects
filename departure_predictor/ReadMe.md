@@ -38,3 +38,5 @@ The training dataset includes 1100 rows and 31 columns, as follows:
 （30）YearsSinceLastPromotion：距离上次升职时长
 （31）YearsWithCurrManager：跟目前的管理者共事年数；
 ```
+
+**Notes**: Codes are from [www.chinahadoop.cn](http://www.chinahadoop.cn/course/1049/material/) 
