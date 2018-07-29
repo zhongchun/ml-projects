@@ -34,6 +34,7 @@ full_df = full_df.interpolate()
 # Convert categorical variable into dummy/indicator variables
 full_df = pd.get_dummies(full_df)
 
+# train_df = full_df[full_df['training_set'] == True]
 train_df = full_df[full_df['training_set'].__eq__(True)]
 train_df = train_df.drop('training_set', axis=1)
 
