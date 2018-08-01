@@ -16,6 +16,7 @@ import pandas
 import matplotlib
 import seaborn
 import sklearn
+import tensorflow
 
 print('Python: {}'.format(sys.version))
 print('scipy: {}'.format(scipy.__version__))
@@ -24,3 +25,4 @@ print('pandas: {}'.format(pandas.__version__))
 print('matplotlib: {}'.format(matplotlib.__version__))
 print('seaborn: {}'.format(seaborn.__version__))
 print('sklearn: {}'.format(sklearn.__version__))
+print('tensorflow: {}'.format(tensorflow.__version__))
