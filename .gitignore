@@ -2,3 +2,5 @@
 .vscode
 
 digit_recognizer/dataset
+logs
+tmp.*
