@@ -1,0 +1,208 @@
+========================================================================================================================
+/Users/huangxiaomu/zhongchun/Scripts: ['filename.pkl', '4.Python', '.DS_Store', 'python', 'MachineLearninginAction', 'ml_by_python', 'website', 'datasets', 'ml_projects', 'gitHub', 'ML', '9.Regression', 'ml_algorithm', '.vscode', 'tool', '5.Package']
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects: ['tmp.data-00000-of-00001', '.DS_Store', 'checkpoint', 'departure_predictor', 'tmp.index', 'fashion_mnist', 'first_project', 'tmp.meta', 'docs', 'ReadMe.md', 'logs', '.gitignore', 'titanic_survivor_predictor', '.git', '.vscode', 'house_price_predictor', 'digit_recognizer']
+========================================================================================================================
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 42000 entries, 0 to 41999
+Columns: 785 entries, label to pixel783
+dtypes: int64(785)
+memory usage: 251.5 MB
+None
+========================================================================================================================
+train.csv loaded: data_df(42000,785)
+========================================================================================================================
+count       785
+unique        1
+top       False
+freq        785
+dtype: object
+========================================================================================================================
+distinct labels:  [1 0 4 7 3 5 8 9 2 6]
+========================================================================================================================
+1    4684
+7    4401
+3    4351
+9    4188
+2    4177
+6    4137
+0    4132
+4    4072
+8    4063
+5    3795
+Name: label, dtype: int64
+objc[76085]: Class FIFinderSyncExtensionHost is implemented in both /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit (0x7fff8dbf4c90) and /System/Library/PrivateFrameworks/FileProvider.framework/OverrideBundles/FinderSyncCollaborationFileProviderOverride.bundle/Contents/MacOS/FinderSyncCollaborationFileProviderOverride (0x1a325f0cd8). One of the two will be used. Which one is undefined.
+========================================================================================================================
+x_train_valid.shape =  (42000, 28, 28, 1)
+y_train_valid_lables.shape =  (42000,)
+image size =  784
+image_width =  28
+image_height =  28
+labels_count =  10
+========================================================================================================================
+0 : logreg train/valid accuracy = 0.940/0.920
+0 : random_forest train/valid accuracy = 0.999/0.939
+0 : extra_trees train/valid accuracy = 1.000/0.945
+1 : logreg train/valid accuracy = 0.940/0.921
+1 : random_forest train/valid accuracy = 0.999/0.943
+1 : extra_trees train/valid accuracy = 1.000/0.950
+2 : logreg train/valid accuracy = 0.939/0.929
+2 : random_forest train/valid accuracy = 0.999/0.943
+2 : extra_trees train/valid accuracy = 1.000/0.943
+3 : logreg train/valid accuracy = 0.939/0.925
+3 : random_forest train/valid accuracy = 0.999/0.940
+3 : extra_trees train/valid accuracy = 1.000/0.952
+4 : logreg train/valid accuracy = 0.940/0.921
+4 : random_forest train/valid accuracy = 0.999/0.938
+4 : extra_trees train/valid accuracy = 1.000/0.942
+5 : logreg train/valid accuracy = 0.939/0.918
+5 : random_forest train/valid accuracy = 0.999/0.942
+5 : extra_trees train/valid accuracy = 1.000/0.943
+6 : logreg train/valid accuracy = 0.941/0.916
+6 : random_forest train/valid accuracy = 0.999/0.943
+6 : extra_trees train/valid accuracy = 1.000/0.943
+7 : logreg train/valid accuracy = 0.941/0.912
+7 : random_forest train/valid accuracy = 0.999/0.937
+7 : extra_trees train/valid accuracy = 1.000/0.943
+8 : logreg train/valid accuracy = 0.940/0.925
+8 : random_forest train/valid accuracy = 0.999/0.944
+8 : extra_trees train/valid accuracy = 1.000/0.942
+9 : logreg train/valid accuracy = 0.940/0.918
+9 : random_forest train/valid accuracy = 0.999/0.934
+9 : extra_trees train/valid accuracy = 1.000/0.945
+extra_trees: averaged train/valid accuracy = 1.000/0.945
+logreg averaged train/valid accuracy = 0.940/0.920
+random_forest averaged train/valid accuracy = 0.999/0.940
+extra_trees averaged train/valid accuracy = 1.000/0.945
+WARNING:tensorflow:From /Users/huangxiaomu/zhongchun/Scripts/ml_projects/digit_recognizer/deepNN/CNN.py:517: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+
+num_weights = 361188
+num_biases = 684
+2018-08-05 18:18:02.587930: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+05-08-2018 18:18:03 : start training
+learnrate =  0.001 , n_epoch =  1.0 , mb_size =  50
+0.00 epoch: train/val loss = 2.7522/2.7524, train/val acc = 0.1086/0.1038
+0.20 epoch: train/val loss = 0.2686/0.2785, train/val acc = 0.9240/0.9126
+0.40 epoch: train/val loss = 0.1471/0.1555, train/val acc = 0.9569/0.9510
+0.60 epoch: train/val loss = 0.1188/0.1254, train/val acc = 0.9624/0.9607
+0.80 epoch: train/val loss = 0.0969/0.1035, train/val acc = 0.9686/0.9674
+1.00 epoch: train/val loss = 0.0931/0.1016, train/val acc = 0.9690/0.9686
+1.00 epoch: train/val loss = 0.1034/0.1013, train/val acc = 0.9669/0.9686
+running time for training:  0:01:14.549184
+generate new set of images
+generate new set of images
+05-08-2018 18:19:24 : start training
+learnrate =  0.001 , n_epoch =  14.0 , mb_size =  50
+1.00 epoch: train/val loss = 0.1026/0.0998, train/val acc = 0.9674/0.9690
+1.20 epoch: train/val loss = 0.0960/0.0962, train/val acc = 0.9717/0.9688
+1.40 epoch: train/val loss = 0.0984/0.0913, train/val acc = 0.9669/0.9693
+1.60 epoch: train/val loss = 0.0758/0.0721, train/val acc = 0.9748/0.9781
+1.80 epoch: train/val loss = 0.0719/0.0628, train/val acc = 0.9767/0.9807
+generate new set of images
+2.00 epoch: train/val loss = 0.0689/0.0555, train/val acc = 0.9802/0.9817
+2.20 epoch: train/val loss = 0.0503/0.0545, train/val acc = 0.9843/0.9821
+2.40 epoch: train/val loss = 0.0652/0.0621, train/val acc = 0.9810/0.9805
+2.60 epoch: train/val loss = 0.0598/0.0509, train/val acc = 0.9824/0.9833
+2.80 epoch: train/val loss = 0.0553/0.0479, train/val acc = 0.9810/0.9833
+3.00 epoch: train/val loss = 0.0612/0.0546, train/val acc = 0.9805/0.9814
+generate new set of images
+0:02:14.312169 : set learn rate to 0.000750
+3.20 epoch: train/val loss = 0.0323/0.0385, train/val acc = 0.9881/0.9879
+3.40 epoch: train/val loss = 0.0372/0.0459, train/val acc = 0.9874/0.9862
+3.60 epoch: train/val loss = 0.0338/0.0375, train/val acc = 0.9886/0.9888
+3.80 epoch: train/val loss = 0.0382/0.0374, train/val acc = 0.9879/0.9869
+4.00 epoch: train/val loss = 0.0391/0.0395, train/val acc = 0.9886/0.9860
+generate new set of images
+4.20 epoch: train/val loss = 0.0308/0.0387, train/val acc = 0.9888/0.9862
+4.40 epoch: train/val loss = 0.0285/0.0335, train/val acc = 0.9898/0.9902
+4.60 epoch: train/val loss = 0.0281/0.0329, train/val acc = 0.9910/0.9895
+4.80 epoch: train/val loss = 0.0568/0.0566, train/val acc = 0.9786/0.9805
+5.00 epoch: train/val loss = 0.0280/0.0314, train/val acc = 0.9902/0.9890
+generate new set of images
+5.20 epoch: train/val loss = 0.0319/0.0295, train/val acc = 0.9898/0.9902
+5.40 epoch: train/val loss = 0.0323/0.0261, train/val acc = 0.9890/0.9917
+5.60 epoch: train/val loss = 0.0362/0.0302, train/val acc = 0.9881/0.9869
+5.80 epoch: train/val loss = 0.0400/0.0313, train/val acc = 0.9867/0.9886
+6.00 epoch: train/val loss = 0.0352/0.0283, train/val acc = 0.9888/0.9893
+0:05:18.915198 : set learn rate to 0.000500
+generate new set of images
+6.20 epoch: train/val loss = 0.0290/0.0228, train/val acc = 0.9907/0.9921
+6.40 epoch: train/val loss = 0.0324/0.0318, train/val acc = 0.9902/0.9893
+6.60 epoch: train/val loss = 0.0386/0.0281, train/val acc = 0.9879/0.9883
+6.79 epoch: train/val loss = 0.0391/0.0295, train/val acc = 0.9881/0.9893
+6.99 epoch: train/val loss = 0.0317/0.0249, train/val acc = 0.9907/0.9914
+generate new set of images
+7.19 epoch: train/val loss = 0.0169/0.0256, train/val acc = 0.9931/0.9905
+7.39 epoch: train/val loss = 0.0186/0.0241, train/val acc = 0.9938/0.9905
+7.59 epoch: train/val loss = 0.0220/0.0274, train/val acc = 0.9921/0.9900
+7.79 epoch: train/val loss = 0.0207/0.0235, train/val acc = 0.9914/0.9921
+7.99 epoch: train/val loss = 0.0193/0.0236, train/val acc = 0.9943/0.9921
+generate new set of images
+8.19 epoch: train/val loss = 0.0226/0.0267, train/val acc = 0.9921/0.9900
+8.39 epoch: train/val loss = 0.0285/0.0304, train/val acc = 0.9902/0.9890
+8.59 epoch: train/val loss = 0.0255/0.0212, train/val acc = 0.9921/0.9933
+8.79 epoch: train/val loss = 0.0231/0.0237, train/val acc = 0.9933/0.9914
+8.99 epoch: train/val loss = 0.0226/0.0221, train/val acc = 0.9919/0.9917
+0:08:31.377415 : set learn rate to 0.000250
+generate new set of images
+9.19 epoch: train/val loss = 0.0199/0.0207, train/val acc = 0.9933/0.9921
+9.39 epoch: train/val loss = 0.0202/0.0201, train/val acc = 0.9940/0.9921
+9.59 epoch: train/val loss = 0.0222/0.0214, train/val acc = 0.9929/0.9929
+9.79 epoch: train/val loss = 0.0222/0.0229, train/val acc = 0.9933/0.9933
+9.99 epoch: train/val loss = 0.0221/0.0217, train/val acc = 0.9931/0.9938
+generate new set of images
+10.19 epoch: train/val loss = 0.0135/0.0192, train/val acc = 0.9943/0.9931
+10.39 epoch: train/val loss = 0.0134/0.0186, train/val acc = 0.9952/0.9933
+10.59 epoch: train/val loss = 0.0129/0.0192, train/val acc = 0.9955/0.9938
+10.79 epoch: train/val loss = 0.0132/0.0189, train/val acc = 0.9950/0.9929
+10.99 epoch: train/val loss = 0.0152/0.0225, train/val acc = 0.9950/0.9910
+generate new set of images
+11.19 epoch: train/val loss = 0.0169/0.0189, train/val acc = 0.9943/0.9940
+11.39 epoch: train/val loss = 0.0182/0.0201, train/val acc = 0.9940/0.9931
+11.59 epoch: train/val loss = 0.0223/0.0210, train/val acc = 0.9931/0.9936
+11.79 epoch: train/val loss = 0.0193/0.0206, train/val acc = 0.9931/0.9931
+11.99 epoch: train/val loss = 0.0215/0.0170, train/val acc = 0.9931/0.9943
+0:11:44.119633 : set learn rate to 0.000100
+generate new set of images
+12.19 epoch: train/val loss = 0.0163/0.0180, train/val acc = 0.9957/0.9933
+12.39 epoch: train/val loss = 0.0159/0.0166, train/val acc = 0.9957/0.9945
+12.59 epoch: train/val loss = 0.0158/0.0163, train/val acc = 0.9955/0.9950
+12.79 epoch: train/val loss = 0.0164/0.0168, train/val acc = 0.9950/0.9940
+12.99 epoch: train/val loss = 0.0169/0.0166, train/val acc = 0.9950/0.9943
+generate new set of images
+13.19 epoch: train/val loss = 0.0132/0.0179, train/val acc = 0.9964/0.9940
+13.39 epoch: train/val loss = 0.0124/0.0170, train/val acc = 0.9962/0.9936
+13.59 epoch: train/val loss = 0.0123/0.0164, train/val acc = 0.9962/0.9938
+13.79 epoch: train/val loss = 0.0135/0.0155, train/val acc = 0.9952/0.9948
+13.99 epoch: train/val loss = 0.0125/0.0159, train/val acc = 0.9957/0.9945
+generate new set of images
+14.19 epoch: train/val loss = 0.0135/0.0178, train/val acc = 0.9964/0.9940
+14.38 epoch: train/val loss = 0.0140/0.0156, train/val acc = 0.9960/0.9938
+14.58 epoch: train/val loss = 0.0171/0.0157, train/val acc = 0.9950/0.9952
+14.78 epoch: train/val loss = 0.0136/0.0154, train/val acc = 0.9960/0.9948
+14.98 epoch: train/val loss = 0.0148/0.0148, train/val acc = 0.9955/0.9957
+generate new set of images
+15.00 epoch: train/val loss = 0.0124/0.0145, train/val acc = 0.9960/0.9955
+running time for training:  0:15:11.381144
+total running time for training:  0:16:34.344017
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+final train/valid loss = 0.0124/0.0145, train/valid accuracy = 0.9960/0.9955
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+W_conv1: min = -0.4638027 max = 0.36279047 mean = -0.0100234095 std = 0.14933813
+W_conv2: min = -0.45205542 max = 0.3447248 mean = -0.015661972 std = 0.10562278
+W_conv3: min = -0.553092 max = 0.36682922 mean = -0.016062347 std = 0.10585052
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+h_fc2 =  [[ -5.5  -10.91  -2.52   0.37  -7.08  -1.98  -5.54 -10.31  14.92  -0.55]]
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+# false predictions:  19 out of 4200
+x_test.shape =  (28000, 28, 28, 1)
+/Users/huangxiaomu/zhongchun/Scripts/ml_projects/tmp.meta
+tmp: y_test_pred_labels[mn].shape =  (28000,)
+{0: 2761, 1: 3192, 2: 2806, 3: 2806, 4: 2748, 5: 2514, 6: 2744, 7: 2903, 8: 2732, 9: 2794}
+cnn_submission.csv completed
